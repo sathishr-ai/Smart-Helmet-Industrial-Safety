@@ -112,11 +112,34 @@ Feel free to check [issues page](#) if you want to contribute.
 
 ---
 
+## 👨‍💻 Authority & Vision
+
+<br>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Developed_By-Sathish_R-1E293B?style=for-the-badge&labelColor=0F172A&color=3B82F6" alt="Author" />
+  <p><em>Aspiring AI Engineer | Architecting Intelligent Systems</em></p>
+  
+  <br>
+
+  <a href="mailto:sathxsh57@gmail.com">
+    <img src="https://img.shields.io/badge/Say_Hello-sathxsh57@gmail.com-1E293B?style=for-the-badge&logo=gmail&logoColor=3B82F6&labelColor=0F172A" alt="Email" />
+  </a>
+  <a href="https://github.com/sathishr-ai">
+    <img src="https://img.shields.io/badge/GitHub-sathishr--ai-1E293B?style=for-the-badge&logo=github&logoColor=3B82F6&labelColor=0F172A" alt="GitHub" />
+  </a>
+  <a href="https://www.linkedin.com/in/sathish-r-2393412a5">
+    <img src="https://img.shields.io/badge/LinkedIn-Sathish_R-1E293B?style=for-the-badge&logo=linkedin&logoColor=0077b5&labelColor=0F172A" alt="LinkedIn" />
+  </a>
+</div>
+
+---
+
 ## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 <div align="center">
-  <i>Stay Safe, Work Smart. Built with ❤️ for Industial Safety.</i>
+  <i>Stay Safe, Work Smart. Built with ❤️ for Industrial Safety.</i>
 </div>
