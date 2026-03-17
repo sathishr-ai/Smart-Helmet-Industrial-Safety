@@ -1,13 +1,24 @@
 <div align="center">
 
-# 👷‍♂️ AI-Integrated Smart Helmet for Industrial Safety
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1E293B,3B82F6,8B5CF6&height=250&section=header&text=INDUS-SAFETY&fontSize=70&fontAlignY=35&desc=Next-Generation%20Industrial%20Safety%20Intelligence&descAlignY=55&descSize=20)
 
-**A Next-Generation Protection System for the Modern Workforce**
+<br>
 
-[![Status](https://img.shields.io/badge/Status-Active-00C853?style=for-the-badge)]()
-[![Hardware](https://img.shields.io/badge/Hardware-Arduino_Uno-00979D?style=for-the-badge&logo=arduino&logoColor=white)]()
-[![App](https://img.shields.io/badge/App-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-FBC02D?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[Vision](#-vision) • [Showcase](#-project-gallery) • [Features](#-key-features) • [Tech Stack](#-tech-stack) • [Hardware](#%EF%B8%8F-hardware-ecosystem) • [Deploy](#-getting-started) • [Contact](#-authority--vision)
+
+<br>
+
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+  <img src="https://img.shields.io/badge/STATUS-ACTIVE_DEPLOY-3B82F6?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Status" />
+  <img src="https://img.shields.io/badge/VERSION-2.0.0_ENTERPRISE-0288D1?style=for-the-badge&logo=githubreleases&logoColor=white" alt="Version" />
+  <img src="https://img.shields.io/badge/FIRMWARE-ARDUINO_UNO-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino" />
+  <img src="https://img.shields.io/badge/MOBILE-FLUTTER-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
+  <img src="https://img.shields.io/badge/LICENSE-MIT-1E293B?style=for-the-badge&logo=git&logoColor=white" alt="License" />
+</div>
+
+<br>
+
+[![Watch Demo](https://img.shields.io/badge/LIVE_STATUS-ACTIVE_MONITORING-FF3B30?style=for-the-badge&logo=youtube&logoColor=white)](#-showcase)
 
 <br>
 
@@ -17,15 +28,31 @@
 
 ---
 
-## 📖 Overview
+## 🔭 Vision
 
 Every year, thousands of industrial accidents occur due to unnoticed environmental hazards and sudden collisions. **INDUS-SAFETY** is an AI-powered smart helmet ecosystem designed to actively monitor surroundings, predict hazards, and alert workers and supervisors in real time.
 
 ### 🌟 Engineering Highlights
 ✔ **Multi-sensor embedded logic** (Gas, Flame, Temp, Ultrasonic) built on C/C++  
-✔ **Real-time collision & proximity detection algorithms** to prevent impact  
+✔ **Real-time collision & proximity detection algorithms** to prevent impacts  
 ✔ **Cross-platform mobile ecosystem** (Worker & Admin dashboards) in Flutter  
 ✔ **Hardware-to-Cloud telemetry integration** for enterprise-wide monitoring  
+
+---
+
+## 📸 Project Gallery
+
+<div align="center">
+
+| Assembly (Internal) | Assembly (External) |
+|:---:|:---:|
+| <img src="assets/hardware_internal.jpeg" alt="Internal Wiring" width="450" style="border-radius:10px; border: 1px solid #333; box-shadow: 0 4px 8px rgba(0,0,0,0.5);"/> | <img src="assets/hardware_external.jpeg" alt="Ultrasonic Mount" width="450" style="border-radius:10px; border: 1px solid #333; box-shadow: 0 4px 8px rgba(0,0,0,0.5);"/> |
+
+| App: Worker Status | App: Admin Dashboard |
+|:---:|:---:|
+| <img src="assets/app_worker.jpeg" alt="Worker Status App" height="450" style="border-radius:10px; border: 1px solid #333; box-shadow: 0 4px 8px rgba(0,0,0,0.5);"/> | <img src="assets/app_admin.jpeg" alt="Admin Dashboard App" height="450" style="border-radius:10px; border: 1px solid #333; box-shadow: 0 4px 8px rgba(0,0,0,0.5);"/> |
+
+</div>
 
 ---
 
@@ -33,7 +60,7 @@ Every year, thousands of industrial accidents occur due to unnoticed environment
 
 ```mermaid
 graph TD;
-    subgraph Smart Helmet hardware
+    subgraph "Smart Helmet Hardware"
         A[Arduino Uno Core] -->|I2C/Analog| B[MQ Gas Sensor];
         A -->|Digital| C[Flame Sensor];
         A -->|Analog| D[LM35 Temp/Humidity];
@@ -42,11 +69,11 @@ graph TD;
     
     A -->|Serial over Wi-Fi| F[ESP8266/ESP32 Module];
     
-    subgraph Cloud Infrastructure
+    subgraph "Cloud Infrastructure"
         F -->|MQTT/HTTPS| G[Real-Time Backend API];
     end
     
-    subgraph INDUS-SAFETY Mobile App
+    subgraph "INDUS-SAFETY Mobile App"
         G -->|Telemetry| H[Worker Dashboard];
         G -->|Aggregated Data| I[Admin Dashboard];
     end
@@ -87,19 +114,11 @@ The core logic of the smart helmet runs on an **Arduino Uno**, strategically wir
 
 ---
 
-## 📸 Project Gallery
+## 💻 Tech Stack
 
-<div align="center">
-
-| Assembly (Internal) | Assembly (External) |
-|:---:|:---:|
-| <img src="assets/hardware_internal.jpeg" alt="Internal Wiring" width="450" style="border-radius:10px;"/> | <img src="assets/hardware_external.jpeg" alt="Ultrasonic Mount" width="450" style="border-radius:10px;"/> |
-
-| App: Worker Status | App: Admin Dashboard |
-|:---:|:---:|
-| <img src="assets/app_worker.jpeg" alt="Worker Status App" height="450" style="border-radius:10px;"/> | <img src="assets/app_admin.jpeg" alt="Admin Dashboard App" height="450" style="border-radius:10px;"/> |
-
-</div>
+- **Firmware:** C/C++ (Arduino IDE)
+- **Mobile Application:** Flutter & Dart (Cross-Platform iOS/Android)
+- **Communication Layer:** Serial over Wi-Fi (ESP module) to Firebase / Local Server
 
 ---
 
