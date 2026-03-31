@@ -24,12 +24,6 @@
   <img src="https://img.shields.io/badge/LICENSE-MIT-1E293B?style=for-the-badge&logo=git&logoColor=white" alt="License" />
 </div>
 
-<br>
-
-[![Watch Demo](https://img.shields.io/badge/WATCH_LIVE_DEMO-FF3B30?style=for-the-badge&logo=youtube&logoColor=white)](#-showcase)
-
-<br>
-
 <i>Next-generation environmental hazard monitoring and collision detection utilizing IoT telemetry and a cross-platform Flutter ecosystem.</i>
 
 </div>
