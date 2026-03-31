@@ -71,23 +71,23 @@ Every year, thousands of industrial accidents occur due to unnoticed environment
 Our robust IoT architecture guarantees fault-tolerant data transmission from the worker's physical environment right to the supervisor's dashboard.
 
 ```mermaid
-graph TD;
-    subgraph "Smart Helmet Hardware Node"
-        A[Arduino Uno Core] -->|Analog Read| B[MQ Gas Sensor];
-        A -->|Digital Read| C[Flame Sensor];
-        A -->|Analog Read| D[LM35 Temp/Humidity];
-        A -->|PWM Pulse| E[HC-SR04 Ultrasonic];
+graph TD
+    subgraph Hardware [Smart Helmet Hardware Node]
+        A[Arduino Uno Core] -->|Analog Read| B[MQ Gas Sensor]
+        A -->|Digital Read| C[Flame Sensor]
+        A -->|Analog Read| D[LM35 Temp/Humidity]
+        A -->|PWM Pulse| E[HC-SR04 Ultrasonic]
     end
     
-    A -->|Serial over UART| F[ESP8266/ESP32 Comms Bridge];
+    A -->|Serial over UART| F[ESP8266/ESP32 Bridge]
     
-    subgraph "Cloud / Network Infrastructure"
-        F -->|MQTT/WebSockets| G[Real-Time Event API];
+    subgraph Cloud [Cloud & Network Infrastructure]
+        F -->|MQTT/WebSockets| G[Real-Time Event API]
     end
     
-    subgraph "INDUS-SAFETY Flutter App"
-        G -->|Localized Telemetry| H[Worker Dashboard UI];
-        G -->|Aggregated Fleet Data| I[Enterprise Admin Panel];
+    subgraph Mobile [INDUS-SAFETY Flutter App]
+        G -->|Localized Telemetry| H[Worker Dashboard UI]
+        G -->|Aggregated Fleet Data| I[Enterprise Admin Panel]
     end
 ```
 
