@@ -64,26 +64,9 @@ Every year, thousands of industrial accidents occur due to unnoticed environment
 
 Our robust IoT architecture guarantees fault-tolerant data transmission from the worker's physical environment right to the supervisor's dashboard.
 
-```mermaid
-graph TD
-    subgraph Hardware [Smart Helmet Hardware Node]
-        A[Arduino Uno Core] -->|Analog Read| B[MQ Gas Sensor]
-        A -->|Digital Read| C[Flame Sensor]
-        A -->|Analog Read| D[LM35 Temp/Humidity]
-        A -->|PWM Pulse| E[HC-SR04 Ultrasonic]
-    end
-    
-    A -->|Serial over UART| F[ESP8266/ESP32 Bridge]
-    
-    subgraph Cloud [Cloud & Network Infrastructure]
-        F -->|MQTT/WebSockets| G[Real-Time Event API]
-    end
-    
-    subgraph Mobile [INDUS-SAFETY Flutter App]
-        G -->|Localized Telemetry| H[Worker Dashboard UI]
-        G -->|Aggregated Fleet Data| I[Enterprise Admin Panel]
-    end
-```
+<div align="center">
+  <img src="https://mermaid.ink/svg/Z3JhcGggVEQKICAgIHN1YmdyYXBoIEhhcmR3YXJlIFtTbWFydCBIZWxtZXQgSGFyZHdhcmUgTm9kZV0KICAgICAgICBBW0FyZHVpbm8gVW5vIENvcmVdIC0tPnxBbmFsb2cgUmVhZHwgQltNUSBHYXMgU2Vuc29yXQogICAgICAgIEEgLS0+fERpZ2l0YWwgUmVhZHwgQ1tGbGFtZSBTZW5zb3JdCiAgICAgICAgQSAtLT58QW5hbG9nIFJlYWR8IERbTE0zNSBUZW1wL0h1bWlkaXR5XQogICAgICAgIEEgLS0+fFBXTSBQdWxzZXwgRVtIQy1TUjA0IFVsdHJhc29uaWNdCiAgICBlbmQKICAgIAogICAgQSAtLT58U2VyaWFsIG92ZXIgVUFSVHwgRltFU1A4MjY2L0VTUDMyIEJyaWRnZV0KICAgIAogICAgc3ViZ3JhcGggQ2xvdWQgW0Nsb3VkICYgTmV0d29yayBJbmZyYXN0cnVjdHVyZV0KICAgICAgICBGIC0tPnxNUVRUL1dlYlNvY2tldHN8IEdbUmVhbC1UaW1lIEV2ZW50IEFQSV0KICAgIGVuZAogICAgCiAgICBzdWJncmFwaCBNb2JpbGUgW0lORFVTLVNBRkVUWSBGbHV0dGVyIEFwcF0KICAgICAgICBHIC0tPnxMb2NhbGl6ZWQgVGVsZW1ldHJ5fCBIW1dvcmtlciBEYXNoYm9hcmQgVUldCiAgICAgICAgRyAtLT58QWdncmVnYXRlZCBGbGVldCBEYXRhfCBJW0VudGVycHJpc2UgQWRtaW4gUGFuZWxdCiAgICBlbmQ=" alt="System Architecture Flowchart" style="background-color: white; padding: 20px; border-radius: 12px; box-shadow: 0px 10px 15px rgba(0,0,0,0.5);" />
+</div>
 
 ---
 
